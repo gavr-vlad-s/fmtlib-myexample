@@ -18,9 +18,13 @@ private:
     Привет лунатикам.
 }};)~";
 
+static const std::string scaner_name     = "Scaner";
+
+static const std::string lexem_info_name = "Lexem";
+
 int main()
 {
-    auto formatted_string = fmt::format(format_string, "Scaner", "Lexem");
+    auto formatted_string = fmt::format(format_string, scaner_name, lexem_info_name);
     puts(formatted_string.c_str());
     return 0;
 }
